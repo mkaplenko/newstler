@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>News page</h1>
+    <h2>Hi {{ user_data.name }}, Here is the news that fit your background:</h2>
+    {% for article in news %}
+        <h3>{{ article.title }}</h3> - <a href="{{ article.link }}">{{ article.link }}</a>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,5 @@
+include README.md
+graft newstler
+
+exclude .*
+global-exclude *.py[cod] __pycache__ *.so

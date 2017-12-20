@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container" style="margin-top: 20px">
+<div class="row">
+    <h1>Welcome to the Newstler</h1>
+    <p>Get the most unneeded news :)</p>
+</div>
+    <div class="row align-items-center">
+        <div class="col">
+        </div>
+        <div class="col">
+            <form method="POST">{% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Login</button> or <a href="{% url "register" %}">Register</a> (Sorry, but it's not free)
+            </form>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div> <!-- /container -->
+{% endblock %}
+
+

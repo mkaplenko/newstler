@@ -1,0 +1,12 @@
+env/
+env*/
+*.egg-info/
+.cache/
+.git/
+.git*
+.tox/
+build/
+ivy/
+coverage-*
+results/
+upload_local/
